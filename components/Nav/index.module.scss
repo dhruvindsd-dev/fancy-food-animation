@@ -1,0 +1,17 @@
+.container {
+    padding-left: 10rem !important ;
+}
+.spacer {
+    width: 350px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.295);
+    position: relative;
+}
+
+.mask {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 0;
+    height: 2px;
+    background-color: black;
+}

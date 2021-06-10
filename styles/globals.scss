@@ -1,0 +1,21 @@
+@import "../styles/bulma/bulma.sass";
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+$left__gradient: #5ec0c7;
+$right__gradient: #ff7878;
+.has-gradient-text {
+  background: $left__gradient;
+  background: -webkit-linear-gradient(to right, $left__gradient 0%, $right__gradient 90%);
+  background: -moz-linear-gradient(to right, $left__gradient 0%, $right__gradient 90%);
+  background: linear-gradient(to right, $left__gradient 0%, $right__gradient 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+.fast__text {
+  font-family: "Satisfy", cursive;
+}
