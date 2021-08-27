@@ -1,10 +1,23 @@
+@import "/styles/bulma/sass/utilities/mixins.sass";
 .container {
-    padding-left: 10rem !important ;
+    padding-left: 6rem;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    @include until-fullhd {
+        padding-left: 5%;
+    }
+    @include mobile {
+        padding-left: 1rem;
+    }
 }
 .spacer {
     width: 350px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.295);
     position: relative;
+    @include tablet-only {
+        width: 200px;
+    }
 }
 
 .mask {
@@ -14,4 +27,9 @@
     top: 0;
     height: 2px;
     background-color: black;
+}
+.mobile__navbar__brand {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
 }

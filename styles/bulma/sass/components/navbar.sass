@@ -3,9 +3,8 @@
 $navbar-background-color: $scheme-main !default
 $navbar-box-shadow-size: 0 2px 0 0 !default
 $navbar-box-shadow-color: $background !default
-$navbar-height: 3.25rem !default
+$navbar-height: auto !default
 $navbar-padding-vertical: 1rem !default
-$navbar-padding-horizontal: 2rem !default
 $navbar-z: 30 !default
 $navbar-fixed-z: 10 !default
 
@@ -46,7 +45,7 @@ $navbar-divider-height: 2px !default
 
 $navbar-bottom-box-shadow-size: 0 -2px 0 0 !default
 
-$navbar-breakpoint: $desktop !default
+$navbar-breakpoint: $tablet !default
 
 $navbar-colors: $colors !default
 
@@ -287,7 +286,6 @@ a.navbar-item,
   .navbar
     min-height: $navbar-height
     &.is-spaced
-      padding: $navbar-padding-vertical $navbar-padding-horizontal
       .navbar-start,
       .navbar-end
         align-items: center

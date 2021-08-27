@@ -1,7 +1,14 @@
+import dynamic from "next/dynamic";
 import Head from "next/head";
+import { useEffect } from "react";
 import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
+	useEffect(() => {
+		if ("scrollRestoration" in history) {
+			history.scrollRestoration = "manual";
+		}
+	}, []);
 	return (
 		<>
 			<Head>
@@ -12,9 +19,11 @@ function MyApp({ Component, pageProps }) {
 					href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
 				/>
 			</Head>
-			<Component {...pageProps} />;
+			<Component {...pageProps} />
 		</>
 	);
 }
 
-export default MyApp;
+export default dynamic(() => Promise.resolve(MyApp), {
+	ssr: false,
+});

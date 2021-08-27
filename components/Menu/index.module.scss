@@ -1,0 +1,29 @@
+@import "/styles/bulma/sass/utilities/mixins.sass";
+.container {
+    background-color: #4a4a4a4f;
+    color: white;
+    margin: 0rem 8rem;
+    @include mobile {
+        margin: 0rem 1rem;
+    }
+}
+
+$left: #002f3a;
+$right: rgb(0, 0, 0);
+.food {
+    background: linear-gradient(90deg, rgb(29, 29, 29) 0%, rgb(54, 0, 0) 20%, rgb(0, 68, 3) 80%, rgb(48, 48, 48) 100%);
+
+    // background-color: red;
+}
+
+.menu__line {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.248);
+    margin: 0 1.5rem;
+}
+.image {
+    @include mobile {
+        width: 80% !important;
+        height: auto !important;
+    }
+}
