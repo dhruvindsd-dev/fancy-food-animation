@@ -11,7 +11,6 @@ function useParallax(ref, scrollY, yOffset = 100, triggerTop = 0) {
 			const top = ref.current.offsetTop;
 			const elementHeight = ref.current.clientHeight;
 			const yRange = [top, top + elementHeight];
-			console.log("y range of parallax", yRange);
 			setElementScrollingPosition(yRange);
 		};
 

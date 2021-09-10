@@ -40,7 +40,7 @@ $right: rgb(0, 0, 0);
         object-fit: contain;
         @include mobile {
             width: 90%;
-            margin-top: 4rem;
+            margin-top: 64px;
             z-index: 35;
         }
     }
@@ -88,31 +88,31 @@ $right: rgb(0, 0, 0);
 }
 
 .main__container {
-    padding-left: 6rem;
+    padding-left: 96px;
     @include until-fullhd {
         padding-left: 5%;
     }
     @include mobile {
         padding-left: 0%;
         flex-grow: 1;
-        margin: 0rem 1rem;
+        margin: 0rem 16rem;
     }
 }
 .banner__text {
-    font-size: 14rem;
-    line-height: 16rem;
+    font-size: 224px;
+    line-height: 256px;
     font-weight: 600;
     @include desktop-only {
-        font-size: 12rem;
-        line-height: 13rem;
+        font-size: 192px;
+        line-height: 208px;
     }
     @include tablet-only {
-        font-size: 10rem;
-        line-height: 11rem;
+        font-size: 160px;
+        line-height: 171px;
     }
     @include mobile {
-        font-size: 5rem;
-        line-height: 6rem;
+        font-size: 80px;
+        line-height: 96px;
     }
 }
 .emoji__parent {
@@ -131,14 +131,14 @@ $right: rgb(0, 0, 0);
     }
 }
 .nav {
-    margin-left: 4rem;
+    margin-left: 64px;
     span {
-        margin-right: 2rem;
+        margin-right: 32px;
     }
     @include mobile {
-        margin-left: 1.5rem;
+        margin-left: 24px;
         span {
-            margin-right: 1rem;
+            margin-right: 16px;
         }
     }
 }

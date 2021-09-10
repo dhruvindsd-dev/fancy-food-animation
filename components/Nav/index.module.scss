@@ -1,6 +1,6 @@
 @import "/styles/bulma/sass/utilities/mixins.sass";
 .container {
-    padding-left: 6rem;
+    padding-left: 96px;
     transition: all 0.2s ease;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.4) !important;
@@ -8,7 +8,7 @@
         padding-left: 5%;
     }
     @include mobile {
-        padding-left: 1rem;
+        padding-left: 16px;
     }
 }
 .spacer {

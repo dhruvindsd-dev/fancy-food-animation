@@ -20,11 +20,9 @@ const UseRotateInView = (scrollY, ref, threshold = 1) => {
 
 		setValues();
 		document.addEventListener("load", setValues);
-		window.addEventListener("resize", setValues);
 
 		return () => {
 			document.removeEventListener("load", setValues);
-			window.removeEventListener("resize", setValues);
 		};
 	}, []);
 
